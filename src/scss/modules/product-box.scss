@@ -1,0 +1,184 @@
+.product-box {
+        width: 220px;
+        height: 318px;
+        padding-bottom: 20px;
+        border: 1px solid #eaeaea;
+        display: flex;
+        flex-flow: column;
+        position: relative;
+
+        &-new {
+            position: relative;
+
+            &::before {
+                content: "new";
+                font-family: "PT Sans";
+                font-weight: 500;
+                font-size: 16px;
+                color: #fff;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                z-index: 3;
+            }
+     
+             &::after {
+              content: "";
+              width: 85px;
+              border-bottom: 30px solid #ff5357;
+              border-left: 30px solid transparent;
+              border-right: 30px solid transparent;
+              transform: rotate(45deg);
+              position: absolute;
+              top: 4px ;
+              right: -24px;
+              z-index: 2;
+              }
+ 
+        }
+
+
+    
+
+    &__wrapper-img {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+    
+    &__info {
+        flex: 0 0 118px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__text {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__price-old {
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 18px;
+        color: #a9a9a9;
+        text-decoration: line-through;
+        text-align: center;
+    }
+
+    &__price {
+        padding: 0 20px 0 36px;
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 38px;
+        color: #fff;
+        background-color: #ee3643;
+        border-radius: 2px 0 0 2px;
+        position: relative;
+
+        &::after {
+            content: "";
+            border-top: 19px solid transparent;
+            border-left: 20px  solid #ee3643;
+            border-bottom: 19px solid transparent;
+            position: absolute;
+            top: 0;
+            right: -20px;
+
+
+
+        }
+
+
+    }
+
+    &__wrap-link {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: 44px;
+        left: 41px;
+        opacity: 0;
+        transition: .2s;
+    }
+
+
+    &__link {
+        width: 135px;
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 2px;
+
+        &-buy {
+            margin-bottom: 7px;
+            color: #fff;
+            background-color: #63a63e;
+            border-bottom: 3px solid #63a63e;
+            border-bottom: 3px solid #367315;
+            position: relative;
+
+            &:hover .product-box__icon {
+                fill: #fff;
+                transition: .2s;
+            }
+
+           &:active {
+               background-color: #367315;
+               transition: .2s;
+           }
+
+
+        }
+
+        &-bookmarks {
+            color: #32425c;
+            background-color: #fff;
+            border: 3px solid #63a63e;
+
+            &:hover {
+                border-color: #32425c;
+                transition: .2s;
+            }
+
+            &:active {
+                opacity: .3;
+                transition: .2s;
+            } 
+        }
+    }
+
+    &__icon {
+        width: 13px;
+        height: 13px;
+        fill:  rgba(255,255,255, .3);
+        position: absolute;
+        top: 9px;
+        left: 15px;
+    }
+
+    &:hover .product-box__wrapper-img {
+            transform: scale(0);
+            transition: .3s;
+     } 
+
+     &:hover .product-box__wrap-link {
+        opacity: 1;
+        transition: .3s;
+     }
+
+
+}

@@ -1,0 +1,176 @@
+.service {
+    background-color: #f4f8f9;
+
+    &__wrapper {
+        width: 960px;
+        margin: 0 auto;
+        padding-top: 65px;
+        padding-bottom: 102px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-bottom: 70px;
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 15px;
+
+    }
+
+    &__wrap-content {
+        position: relative;
+    }
+
+    &__input {
+          display: none;
+    }
+
+    &__label {
+       display: block;
+       width: 240px;
+       padding-left: 22px;
+       font-family: "Cuprum";
+       font-weight: 700;
+       font-size: 21px;
+       line-height: 61px;
+       color: #fff;
+       background-color: #3d546e;
+       border-bottom: 1px solid #33445a;
+       cursor: pointer;
+
+    }
+
+    &__box {
+        display: none;
+        width: 380px;
+        position: absolute;
+        top: -7px;
+        left: 320px;
+        
+
+        &-delivery {
+
+            &::before {
+                content: "";
+                width: 206px;
+                height: 146px;
+                background: url(../img/delivery.png) no-repeat center;
+                position: absolute;
+                top: 23px;
+                left: 413px;
+                z-index: 3;
+            }
+            
+            &::after {
+                content: "";
+                width: 467px;
+                height: 261px;
+                background: url(../img/delivery-shadow.png) no-repeat center;
+                position: absolute;
+                top: 23px;
+                left: 150px;
+                z-index: 2;
+            }
+
+        }
+
+        &-warranty {
+            &::before {
+                content: "";
+                width: 170px;
+                height: 172px;
+                background: url(../img/warranty.png) no-repeat center;
+                position: absolute;
+                top: 1px;
+                left: 458px;
+                z-index: 3;
+            }
+            
+            &::after {
+                content: "";
+                width: 388px;
+                height: 271px;
+                background: url(../img/warranty-shadow.png) no-repeat center;
+                position: absolute;
+                top: 13px;
+                left: 239px;
+                z-index: 2;
+            }
+        }
+
+        &-credit {
+            &::before {
+                content: "";
+                width: 181px;
+                height: 184px;
+                background: url(../img/credit.png) no-repeat center;
+                position: absolute;
+                top: -1px;
+                left: 449px;
+                z-index: 3;
+            }
+            
+            &::after {
+                content: "";
+                width: 459px;
+                height: 284px;
+                background: url(../img/credit-shadow.png) no-repeat center;
+                position: absolute;
+                top: 0;
+                left: 165px;
+                z-index: 2;
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 25px;
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 30px;
+        color: #3d546f;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    &__btn {
+        width: 195px;
+        margin-top: 25px;
+    }
+
+    &__input:checked + .service__label {
+        background-color: #fff;
+        color: #3d546e;
+        border-color: #fff;
+        transition: .2s;
+    }
+
+    
+}
+
+#service__delivery:checked ~ #delivery {
+    display: block;
+    transition: .2s;
+}
+
+#service__warranty:checked ~ #warranty {
+    display: block;
+    transition: .2s;
+}
+
+#service__credit:checked ~ #credit {
+    display: block;
+    transition: .2s;
+}

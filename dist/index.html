@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/style.bundle.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+
+    <title>Техномарт</title>
+  </head>
+
+  <body>
+    <svg class="svg-sprites">
+      <symbol id="arrow" viewBox="0 0 512.002 512.002">
+        <g>
+          <path
+            d="M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105
+        L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795
+        l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="home" viewBox="0 0 512 512">
+        <g>
+          <polygon
+            points="406,179.293 406,51.085 346,51.085 346,119.542 256,29.915 0,284.853 0,316.085 61,316.085 61,482.085 
+          220.667,482.085 220.667,382.085 290.667,382.085 290.667,482.085 451,482.085 451,316.085 512,316.085 512,284.853 		"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="telephone" viewBox="0 0 401.998 401.998">
+        <g>
+          <path
+            d="M401.129,311.475c-1.137-3.426-8.371-8.473-21.697-15.129c-3.61-2.098-8.754-4.949-15.41-8.566
+      c-6.662-3.617-12.709-6.95-18.13-9.996c-5.432-3.045-10.521-5.995-15.276-8.846c-0.76-0.571-3.139-2.234-7.136-5
+      c-4.001-2.758-7.375-4.805-10.14-6.14c-2.759-1.327-5.473-1.995-8.138-1.995c-3.806,0-8.56,2.714-14.268,8.135
+      c-5.708,5.428-10.944,11.324-15.7,17.706c-4.757,6.379-9.802,12.275-15.126,17.7c-5.332,5.427-9.713,8.138-13.135,8.138
+      c-1.718,0-3.86-0.479-6.427-1.424c-2.566-0.951-4.518-1.766-5.858-2.423c-1.328-0.671-3.607-1.999-6.845-4.004
+      c-3.244-1.999-5.048-3.094-5.428-3.285c-26.075-14.469-48.438-31.029-67.093-49.676c-18.649-18.658-35.211-41.019-49.676-67.097
+      c-0.19-0.381-1.287-2.19-3.284-5.424c-2-3.237-3.333-5.518-3.999-6.854c-0.666-1.331-1.475-3.283-2.425-5.852
+      s-1.427-4.709-1.427-6.424c0-3.424,2.713-7.804,8.138-13.134c5.424-5.327,11.326-10.373,17.7-15.128
+      c6.379-4.755,12.275-9.991,17.701-15.699c5.424-5.711,8.136-10.467,8.136-14.273c0-2.663-0.666-5.378-1.997-8.137
+      c-1.332-2.765-3.378-6.139-6.139-10.138c-2.762-3.997-4.427-6.374-4.999-7.139c-2.852-4.755-5.799-9.846-8.848-15.271
+      c-3.049-5.424-6.377-11.47-9.995-18.131c-3.615-6.658-6.468-11.799-8.564-15.415C98.986,9.233,93.943,1.997,90.516,0.859
+      C89.183,0.288,87.183,0,84.521,0c-5.142,0-11.85,0.95-20.129,2.856c-8.282,1.903-14.799,3.899-19.558,5.996
+      c-9.517,3.995-19.604,15.605-30.264,34.826C4.863,61.566,0.01,79.271,0.01,96.78c0,5.135,0.333,10.131,0.999,14.989
+      c0.666,4.853,1.856,10.326,3.571,16.418c1.712,6.09,3.093,10.614,4.137,13.56c1.045,2.948,2.996,8.229,5.852,15.845
+      c2.852,7.614,4.567,12.275,5.138,13.988c6.661,18.654,14.56,35.307,23.695,49.964c15.03,24.362,35.541,49.539,61.521,75.521
+      c25.981,25.98,51.153,46.49,75.517,61.526c14.655,9.134,31.314,17.032,49.965,23.698c1.714,0.568,6.375,2.279,13.986,5.141
+      c7.614,2.854,12.897,4.805,15.845,5.852c2.949,1.048,7.474,2.43,13.559,4.145c6.098,1.715,11.566,2.905,16.419,3.576
+      c4.856,0.657,9.853,0.996,14.989,0.996c17.508,0,35.214-4.856,53.105-14.562c19.219-10.656,30.826-20.745,34.823-30.269
+      c2.102-4.754,4.093-11.273,5.996-19.555c1.909-8.278,2.857-14.985,2.857-20.126C401.99,314.814,401.703,312.819,401.129,311.475z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="basket" viewBox="0 0 510 510">
+        <g>
+          <path
+            d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+              c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+              c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+              c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="user" viewBox="0 0 415.744 415.744">
+        <g>
+          <path
+            d="M207.872,0c-53.76,0-97.28,43.52-97.28,97.28s43.52,97.28,97.28,97.28s97.28-43.52,97.28-97.28S261.632,0,207.872,0z"
+          />
+          <path
+            d="M245.76,205.824h-75.776c-76.288,0-138.24,61.952-138.24,138.24v56.32c0,8.704,6.656,15.36,15.36,15.36H368.64
+            c8.704,0,15.36-6.656,15.36-15.36v-56.32C384,267.776,322.048,205.824,245.76,205.824z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="exit" viewBox="0 0 447.674 447.674">
+        <g>
+          <path
+            d="M182.725,379.151c-0.572-1.522-0.769-2.816-0.575-3.863c0.193-1.04-0.472-1.902-1.997-2.566
+        c-1.525-0.664-2.286-1.191-2.286-1.567c0-0.38-1.093-0.667-3.284-0.855c-2.19-0.191-3.283-0.288-3.283-0.288h-3.71h-3.14H82.224
+        c-12.562,0-23.317-4.469-32.264-13.421c-8.945-8.946-13.417-19.698-13.417-32.258V123.335c0-12.562,4.471-23.313,13.417-32.259
+        c8.947-8.947,19.702-13.422,32.264-13.422h91.361c2.475,0,4.421-0.614,5.852-1.854c1.425-1.237,2.375-3.094,2.853-5.568
+        c0.476-2.474,0.763-4.708,0.859-6.707c0.094-1.997,0.048-4.521-0.144-7.566c-0.189-3.044-0.284-4.947-0.284-5.712
+        c0-2.474-0.905-4.611-2.712-6.423c-1.809-1.804-3.949-2.709-6.423-2.709H82.224c-22.648,0-42.016,8.042-58.101,24.125
+        C8.042,81.323,0,100.688,0,123.338v200.994c0,22.648,8.042,42.018,24.123,58.095c16.085,16.091,35.453,24.133,58.101,24.133
+        h91.365c2.475,0,4.422-0.622,5.852-1.854c1.425-1.239,2.375-3.094,2.853-5.571c0.476-2.471,0.763-4.716,0.859-6.707
+        c0.094-1.999,0.048-4.518-0.144-7.563C182.818,381.817,182.725,379.915,182.725,379.151z"
+          />
+          <path
+            d="M442.249,210.989L286.935,55.67c-3.614-3.612-7.898-5.424-12.847-5.424c-4.949,0-9.233,1.812-12.851,5.424
+        c-3.617,3.617-5.424,7.904-5.424,12.85v82.226H127.907c-4.952,0-9.233,1.812-12.85,5.424c-3.617,3.617-5.424,7.901-5.424,12.85
+        v109.636c0,4.948,1.807,9.232,5.424,12.847c3.621,3.61,7.901,5.427,12.85,5.427h127.907v82.225c0,4.945,1.807,9.233,5.424,12.847
+        c3.617,3.617,7.901,5.428,12.851,5.428c4.948,0,9.232-1.811,12.847-5.428L442.249,236.69c3.617-3.62,5.425-7.898,5.425-12.848
+        C447.674,218.894,445.866,214.606,442.249,210.989z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="search" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M225.474,0C101.151,0,0,101.151,0,225.474c0,124.33,101.151,225.474,225.474,225.474
+              c124.33,0,225.474-101.144,225.474-225.474C450.948,101.151,349.804,0,225.474,0z M225.474,409.323
+              c-101.373,0-183.848-82.475-183.848-183.848S124.101,41.626,225.474,41.626s183.848,82.475,183.848,183.848
+              S326.847,409.323,225.474,409.323z"
+          />
+
+          <path
+            d="M505.902,476.472L386.574,357.144c-8.131-8.131-21.299-8.131-29.43,0c-8.131,8.124-8.131,21.306,0,29.43l119.328,119.328
+              c4.065,4.065,9.387,6.098,14.715,6.098c5.321,0,10.649-2.033,14.715-6.098C514.033,497.778,514.033,484.596,505.902,476.472z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="login" viewBox="0 0 95.667 95.667">
+        <g>
+          <path
+            d="M39.173,72.344l39.447-22.777c0.619-0.356,1-1.018,1-1.731s-0.381-1.375-1-1.732L39.173,23.324
+              c-0.619-0.357-1.381-0.357-2,0c-0.619,0.357-1,1.018-1,1.732v10.605H2.121c-1.104,0-2,0.896-2,2v20.344c0,1.104,0.896,2,2,2
+              h34.053v10.604c0,0.716,0.381,1.375,1,1.732c0.31,0.18,0.655,0.268,1,0.268C38.519,72.609,38.864,72.521,39.173,72.344z"
+          />
+          <path
+            d="M80.775,0H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c2.632,0,4.771,2.141,4.771,4.771v66.125
+              c0,2.631-2.141,4.771-4.771,4.771H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c8.146,0,14.771-6.627,14.771-14.771
+              V14.772C95.546,6.627,88.92,0,80.775,0z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="bookmark" viewBox="0 0 512.005 512.005">
+        <g>
+          <path
+            d="M362.669,0H149.336c-29.397,0-53.333,23.915-53.333,53.333v448c0,4.309,2.603,8.213,6.592,9.856
+              c3.989,1.664,8.576,0.725,11.627-2.304l141.781-141.803l141.781,141.781c2.048,2.048,4.779,3.136,7.552,3.136
+              c1.365,0,2.752-0.256,4.075-0.811c3.989-1.643,6.592-5.547,6.592-9.856v-448C416.002,23.915,392.066,0,362.669,0z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="vk" viewBox="0 0 511.962 511.962">
+        <g>
+          <path
+            d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+        c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+        c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+        c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+        c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+        c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+        c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+        c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+        c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+        s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+        C488.583,400.807,524.359,398.599,507.399,370.471z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="facebook" viewBox="0 0 96.124 96.123">
+        <g>
+          <path
+            d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+              c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+              c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+              c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+          />
+        </g>
+      </symbol>
+
+      <symbol id="instagram" viewBox="0 0 510 510">
+        <g>
+          <path
+            d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+         M255,153c56.1,0,102,45.9,102,102c0,56.1-45.9,102-102,102c-56.1,0-102-45.9-102-102C153,198.9,198.9,153,255,153z M63.75,459
+        C56.1,459,51,453.9,51,446.25V229.5h53.55C102,237.15,102,247.35,102,255c0,84.15,68.85,153,153,153c84.15,0,153-68.85,153-153
+        c0-7.65,0-17.85-2.55-25.5H459v216.75c0,7.65-5.1,12.75-12.75,12.75H63.75z M459,114.75c0,7.65-5.1,12.75-12.75,12.75h-51
+        c-7.65,0-12.75-5.1-12.75-12.75v-51c0-7.65,5.1-12.75,12.75-12.75h51C453.9,51,459,56.1,459,63.75V114.75z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__box">
+          <div class="header__logo">
+            <a class="logo" href="index.html">Техномарт</a>
+          </div>
+
+          <div class="search">
+            <form class="search__form" action="">
+              <label class="search__label" for="search">
+                <input class="search__input" id="search" type="text" placeholder="Поиск:" />
+
+                <svg class="search__icon">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </label>
+            </form>
+          </div>
+
+          <div class="nav-buy">
+            <a class="nav-buy__link nav-buy__link-bookmarks" href="#"
+              >Закладки: 0
+              <svg class="nav-buy__icon">
+                <use xlink:href="#bookmark"></use>
+              </svg>
+            </a>
+            <a class="nav-buy__link nav-buy__link-bosket" href="#">
+              Корзина: 0
+              <svg class="nav-buy__icon">
+                <use xlink:href="#basket"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="order">
+            <a class="order__link" href="#">Оформить заказ</a>
+          </div>
+        </div>
+        <!--/header__box-->
+      </div>
+      <!--/header__wrap-->
+
+      <div class="header__box header__box_indent">
+        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+
+        <address class="header__address">
+          <a class="header__tel " href="tel:+7(812)555-05-55"
+            >+7 (812) 555-05-55
+            <svg class="header__tel-icon">
+              <use xlink:href="#telephone "></use>
+            </svg>
+          </a>
+          <p class="header__text-address">г.Санкт-Петерберг, ул Б. Конюшенная, д. 19/8</p>
+        </address>
+
+        <div class="nav-user none">
+          <a class="nav-user__link nav-user__link-entrance" href="#"
+            >Войти
+            <svg class="nav-user__icon">
+              <use xlink:href="#login"></use>
+            </svg>
+          </a>
+          <a class="nav-user__link" href="#">Регистрация</a>
+        </div>
+
+        <div class="profile">
+          <div class="profile__box-user">
+            <svg class="profile__icon profile__icon-user">
+              <use xlink:href="#user"></use>
+            </svg>
+            <p class="profile__text">Равшан Джамшутович</p>
+            <a href="#">
+              <svg class="profile__icon profile__icon-exit">
+                <use xlink:href="#exit"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="profile__box-link">
+            <a class="profile__link" href="#">Мои заказы</a>
+            <a class="profile__link" href="#">Личный кабинет</a>
+          </div>
+        </div>
+      </div>
+      <!-- /.header__box -->
+
+      <div class="header__box">
+        <nav class="menu">
+          <a class="menu__link" href="index.html">Главная</a>
+          <a class="menu__link" href="#">Компания</a>
+          <a class="menu__link" href="technomart-catalog.html">Каталог</a>
+          <a class="menu__link" href="#">Новости</a>
+          <a class="menu__link" href="#">Спецпредложения</a>
+          <a class="menu__link" href="#">Доставка</a>
+          <a class="menu__link" href="#">Контакты</a>
+        </nav>
+      </div>
+      <!-- /.header__box -->
+    </header>
+
+    <main>
+      <section class="catalog">
+        <div class="catalog__box catalog__box-materials catalog__box_orange catalog__box_new">
+          <h2 class="catalog__title">Материалы</h2>
+          <a class="catalog__link" href="#">На любой вкус</a>
+        </div>
+
+        <div class="catalog__box catalog__box-tool catalog__box_blue catalog__box_new">
+          <h2 class="catalog__title">Инструмент</h2>
+          <a class="catalog__link" href="#">На все случаи</a>
+        </div>
+
+        <div class="catalog__box catalog__box-equipment catalog__box_purple">
+          <h2 class="catalog__title">Техника</h2>
+          <a class="catalog__link" href="#">Для стройки</a>
+        </div>
+
+        <div class="special-offer">
+          <div class="special-offer__box-switches">
+            <button class="special-offer__switches special-offer__switches_active" id="speceal-offer__btn-1"></button>
+            <button class="special-offer__switches" id="speceal-offer__btn-2"></button>
+          </div>
+
+          <svg class="special-offer__icon special-offer__icon_right" id="special-offer__arrow-right">
+            <use xlink:href="#arrow"></use>
+          </svg>
+
+          <svg class="special-offer__icon special-offer__icon_left" id="special-offer__arrow-left">
+            <use xlink:href="#arrow"></use>
+          </svg>
+
+          <div id="box-hamer-drill" class="special-offer__box special-offer__box-hammer-drill">
+            <h3 class="special-offer__title">Префораторы</h3>
+            <p class="special-offer__text">Настоящие мужские игрушки</p>
+            <a class="special-offer__btn btn" href="#">Открыть каталог</a>
+          </div>
+
+          <div id="box-drill" class="special-offer__box special-offer__box-drill none">
+            <h3 class="special-offer__title">Дрели</h3>
+            <p class="special-offer__text">Соседям на радость!</p>
+            <a class="special-offer__btn btn" href="#">Открыть каталог</a>
+          </div>
+        </div>
+        <!--/special-offer-->
+
+        <div class="catalog__wrap">
+          <div class="catalog__box catalog__box-discounts catalog__box_green">
+            <h2 class="catalog__title">Скидки 50%</h2>
+            <a class="catalog__link" href="#">На 350 товаров</a>
+          </div>
+
+          <div class="catalog__box catalog__box-delivery catalog__box_orange catalog__box_new">
+            <h2 class="catalog__title">Доставка</h2>
+            <a class="catalog__link" href="#">бесплатно</a>
+          </div>
+        </div>
+        <!--catalog__wrap-->
+      </section>
+      <!--/catolog-->
+
+      <section class="popular-product">
+        <div class="popular-product__wrap-heading wrapper-title">
+          <h1 class="popular-product__title">Популярные товыры:</h1>
+          <a class="popular-product__btn btn" href="#">Все популярные товары</a>
+        </div>
+        <!--/popular-product__wrap-->
+
+        <div class="popular-product__wrap-content">
+          <div class="product-box  popular-product__item">
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG9000.jpg" alt="" />
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 9000</p>
+              <p class="product-box__price-old">32500 Р.</p>
+              <p class="product-box__price">25500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href=""
+                >Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+          </div>
+          <!-- /product-box-->
+
+          <div class="product-box  popular-product__item">
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG3000.jpg" alt="" />
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 3000</p>
+              <p class="product-box__price-old">22500 Р.</p>
+              <p class="product-box__price">15500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="#"
+                >Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="#">В закладки</a>
+            </div>
+          </div>
+          <!-- /product-box-->
+
+          <div class="product-box popular-product__item">
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG6000.jpg" alt="" />
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 6000</p>
+              <p class="product-box__price-old">30500 Р.</p>
+              <p class="product-box__price">25500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href=""
+                >Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+          </div>
+          <!-- /product-box-->
+
+          <div class="product-box product-box-new popular-product__item">
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG2000.jpg" alt="" />
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 2000</p>
+              <p class="product-box__price">12500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href=""
+                >Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+          </div>
+          <!-- /product-box-->
+        </div>
+        <!--/popular-product__wrap-content-->
+      </section>
+      <!--/popular-product-->
+
+      <section class="popular-manufacturers">
+        <div class="popular-manufacturers__wrap-heading wrapper-title">
+          <h1 class="popular-manufacturers__title">Популярные производители:</h1>
+          <a class="popular-manufacturers__btn btn" href="#">Все производители</a>
+        </div>
+
+        <ul class="popular-manufacturers__wrap-content">
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-bosch.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-Makita.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-DeWALT.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-Интерскол.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-Hitachi.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-LG.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-AEG.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+          <li class="popular-manufacturers__item">
+            <a href="#" class="popular-manufacturers__link">
+              <img src="img/logo-Metabo.png" alt="" class="popular-manufacturers__img" />
+            </a>
+          </li>
+        </ul>
+        <!--/popular-manufacturers__wrap-content-->
+      </section>
+      <!--/popular-manufacturers-->
+
+      <section class="service">
+        <div class="service__wrapper">
+          <h1 class="service__title">Сервисы</h1>
+          <p class="service__text">
+            Хороший интернет-магазин отличается от плохого не только ценами! <br />
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+          <div class="service__wrap-content">
+            <input class="service__input" id="service__delivery" type="radio" name="service__radio" checked />
+            <label class="service__label" for="service__delivery">Доставка</label>
+
+            <input class="service__input" id="service__warranty" type="radio" name="service__radio" />
+            <label class="service__label" for="service__warranty">Гарантия</label>
+
+            <input class="service__input" id="service__credit" type="radio" name="service__radio" />
+            <label class="service__label" for="service__credit">Кредит</label>
+
+            <div class="service__box service__box-delivery" id="delivery">
+              <h2 class="service__subtitle">Доставка</h2>
+              <p class="service__txt">
+                Мы с удовольствием доставим ваш товар прямо <br />
+                к вашему подъезду совершенно бесплатно! <br />
+                Ведь мы неплохо заработаем, <br />
+                поднимая его на этаж!
+              </p>
+            </div>
+
+            <div class="service__box service__box-warranty" id="warranty">
+              <h2 class="service__subtitle">Гарантия</h2>
+              <p class="service__txt">
+                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
+                вазгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                <br />
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>
+
+            <div class="service__box service__box-credit" id="credit">
+              <h2 class="service__subtitle">Кредит</h2>
+              <p class="service__txt">
+                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="service__btn btn" href="#">Отправить заявку</a>
+            </div>
+          </div>
+          <!--/service__wrap-content-->
+        </div>
+        <!--/service__wrapper-->
+      </section>
+      <!--/service-->
+
+      <section class="information">
+        <div class="information__wrapper">
+          <div class="information__about-us about-us">
+            <h2 class="information__title ">Компания &#171;Техномарт&#187;</h2>
+            <div class=" information__text">
+              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br />
+              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+            </div>
+            <div class="information__text">
+              Мы можем доставить ваш товар в самые отдалннные точки России! <br />
+              Техномарт работает со многими транспортными компаниями:
+              <ul class="information__list">
+                <li class="information__item">Деловые линии</li>
+                <li class="information__item">Автотрейдинг</li>
+                <li class="information__item">ЖелДорЭкспедиция</li>
+              </ul>
+            </div>
+            <a class="about-us__btn btn" href="#">Подробнее о компании</a>
+          </div>
+          <!--/about-us-->
+
+          <div class="information__contact contact">
+            <h2 class="information__title contact__title">Контакты</h2>
+
+            <p class="information__text">
+              Вы можете забрать товар сами, <br />
+              заехав в наш офис:
+            </p>
+
+            <div class="contact__box-map">
+              <iframe
+                class="contact__map "
+                id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.462265968705!2d30.3237363467262!3d59.93903335349158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586381818550!5m2!1sru!2sru"
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <a class="contact__link none" id="contact__link-close" href="#"></a>
+
+            <a class="contact__btn btn" id="contact__btn" href="">Заблудились? Напишите нам!</a>
+          </div>
+          <!-- /.contact -->
+        </div>
+        <!--/information-->
+      </section>
+      <!--/information-->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper_blue">
+        <div class="footer__wrap ">
+          <div class="footer__box-info">
+            <div class="footer__logo">
+              <a class="logo" href="index.html">Техномарт</a>
+            </div>
+
+            <address class="footer__address">
+              <a class="footer__text-address" href="https://goo.gl/maps/6eyuDGYa8fcNUnHe7" target="_blank"
+                >г. Санкт-Петерберг, ул Б. Конюшенная, д. 19/8</a
+              >
+              <a class="footer__tel" href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+            </address>
+          </div>
+          <div class="footer__box-nav">
+            <div class="extra-menu">
+              <ul class="extra-menu__list">
+                <li class="extra-menu__item"><a class="extra-menu__link" href="#">Компания</a></li>
+                <li class="extra-menu__item"><a class="extra-menu__link" href="#">Новости</a></li>
+                <li class="extra-menu__item"><a class="extra-menu__link" href="technomart-catalog.html">Каталог</a></li>
+                <li class="extra-menu__item"><a class="extra-menu__link" href="#">Доставка</a></li>
+                <li class="extra-menu__item"><a class="extra-menu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <!--/extra-menu-->
+
+            <div class="nav-catalog">
+              <ul class="nav-catalog__list">
+                <li class="nav-catalog__item"><a href="#" class="nav-catalog__link">Материалы</a></li>
+                <li class="nav-catalog__item"><a href="#" class="nav-catalog__link">Техника</a></li>
+                <li class="nav-catalog__item"><a href="#" class="nav-catalog__link">Инструмент</a></li>
+                <li class="nav-catalog__item"><a href="#" class="nav-catalog__link">Спецпредложения</a></li>
+              </ul>
+            </div>
+            <!--/nav-catolog-->
+          </div>
+          <!-- /.footer__box-nav -->
+        </div>
+        <!--/footer__wrap-->
+      </div>
+      <!--/footer__wrapper_blue-->
+
+      <div class="footer__wrapper_navy-blue">
+        <div class="footer__wrap">
+          <div class="protection-rights">
+            &#169; 2010-2017 Компания &#171;Техномарт&#187; <br />
+            Все права защищены
+          </div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <svg class="social__icon social__icon-vk">
+                    <use xlink:href="#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <svg class="social__icon social__icon-facebook">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <svg class="social__icon social__icon-instagram">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--/social-->
+
+          <div class="copy">
+            <div class="copy__box">
+              <p class="copy__text">Обратная связь:</p>
+              <a class="copy__link" href="malto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
+
+            <div class="copy__box">
+              <p class="copy__text">Разработано &#8212;</p>
+              <a class="copy__link" href="#">htmlacademy.ru</a>
+            </div>
+          </div>
+          <!--/copy-->
+        </div>
+        <!--footer__wrap-->
+      </div>
+      <!--/footer__wrapper_navy-blue-->
+    </footer>
+    <!--/footer-->
+
+    <div class="modal-window none" id="modal">
+      <a class="modal-window__link-exit" href="#"></a>
+
+      <form class="form-message" action="#" name="feedback" method="POST" autocomplete="on">
+        <div class="form-message__wrap">
+          <div class="form-message__box">
+            <label class="form-message__label" for="form-message__name"> Ваше имя:</label>
+            <input
+              class="form-message__input"
+              id="form-message__name"
+              type="text"
+              name="name"
+              required
+              placeholder="Представтесь пожалуйста"
+            />
+          </div>
+
+          <div class="form-message__box">
+            <label class="form-message__label" for="form-message__email"> Ваш e-mail:</label>
+            <input
+              class="form-message__input"
+              id="form-message__email"
+              type="email"
+              name="email"
+              required
+              placeholder="Для отправки ответа"
+            />
+          </div>
+        </div>
+
+        <label class="form-message__label" for="farm-massage__textarea"> Текст письма: </label>
+        <textarea
+          class="form-message__textarea"
+          name="message"
+          required
+          id="farm-massage__textarea"
+          placeholder="В свободной форме"
+        ></textarea>
+
+        <div class="modal-window__wrap_gray">
+          <input class="form-message__btn btn" type="submit" />
+        </div>
+      </form>
+    </div>
+    <!--/modal-window-->
+
+    <script src="js/bundle.js"></script>
+
+    <script></script>
+  </body>
+</html>

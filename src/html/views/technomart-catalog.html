@@ -1,0 +1,379 @@
+<% var data = {
+  title: "Техномарт каталог",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<main>
+
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index.html">
+          <svg class="breadcrumbs__icon">
+            <use xlink:href="#home"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инструмент</a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Перфораторы</a></li>
+    </ul>
+    
+  </div>
+  <!--/breadcrumbs-->
+
+
+
+  <section class="catalog-content">
+    <h1 class="catalog-content__title">Перфораторы</h1>
+
+    <div class="catalog-content__wrapper">
+
+      <div class="catalog-content__wrap">
+
+        <div class="filter">
+          <h2 class="filter__title">Фильтр:</h2>
+
+          <form class="filter__form" action="#" method="GET">
+
+            <div class="filter__box">
+              <h3 class="filter__subtitle">Цена:</h3>
+
+              <div class="filter__range_wrapper">
+                <div class="filter__range" id="range">
+                  <div class="filter__range-between" id="range-between"></div>
+                  <button id='id661' class="filter__range-btn"></button>
+                  <button id='id662' class="filter__range-btn"></button>
+                </div>
+              </div>
+
+              <div class="filter__box-input-range">
+                <input id='id66i1' class="filter__input-range" type="number"  max="35000" min="0" >
+                &#8722;
+                <input id='id66i2' class="filter__input-range" type="number"  max="35000" min="0" >
+              </div>
+            </div>
+            <!--/filter__box-->
+
+            <div class="filter__box">
+              <h3 class="filter__subtitle">Производитель:</h3>
+
+              <input class="filter__input-checkbox none" id="filter__checkbox-bosch" type="checkbox"
+                name="filter__checbox" value="bosch" checked>
+              <label class="filter__label filter__label-checkbox" for="filter__checkbox-bosch">Bosch </label>
+
+              <input class="filter__input-checkbox none" id="filter__checkbox-interskol" type="checkbox"
+                name="filter__checbox" value="interskol">
+              <label class="filter__label filter__label-checkbox" for="filter__checkbox-interskol">Интурскол </label>
+
+              <input class="filter__input-checkbox none" id="filter__checkbox-makita" type="checkbox"
+                name="filter__checbox" value="makita" checked>
+              <label class="filter__label filter__label-checkbox" for="filter__checkbox-makita">Makita </label>
+
+              <input class="filter__input-checkbox none" id="filter__checkbox-dewalt" type="checkbox"
+                name="filter__checbox" value="dewalt">
+              <label class="filter__label filter__label-checkbox" for="filter__checkbox-dewalt">Dewalt </label>
+
+              <input class="filter__input-checkbox none" id="filter__checkbox-hitachi" type="checkbox"
+                name="filter__checbox" value="hitachi">
+              <label class="filter__label filter__label-checkbox" for="filter__checkbox-hitachi">Hitachi </label>
+
+            </div>
+            <!--/filter__box-->
+
+            <div class="filter__box">
+              <h3 class="filter__subtitle">Питание:</h3>
+
+              <input class="filter__input-radio none" id="filter__radio-battery" type="radio" name="filter__radio" value="battery"
+                checked>
+              <label class="filter__label filter__label-radio" for="filter__radio-battery">Аккумуляторные</label>
+
+              <input class="filter__input-radio none" id="filter__radio-network" type="radio" name="filter__radio" value="network">
+              <label class="filter__label filter__label-radio" for="filter__radio-network">Сетевые</label>
+
+            </div>
+            <!--/filter__box-->
+
+            <button class="filter__btn">Показать</button>
+
+          </form>
+        </div>
+        <!--/filter-->
+
+      </div>
+      <!--/catalog-content__wrap-->
+
+      <div class="catalog-content__wrap">
+
+        <div class="sorting">
+          <h2 class="sorting__title">Сортировка:</h2>
+
+          <ul class="sorting__list">
+            <li class="sorting__item"><button class="sorting__btn sorting__btn_active">По цене</button></li>
+            <li class="sorting__item"><button class="sorting__btn">По типу</button></li>
+            <li class="sorting__item"><button class="sorting__btn">По функционалу</button></li>
+            <li class="sorting__item"><button
+                class="sorting__btn-arrows sorting__btn-arrows_active sorting__btn-arrows-up"></button></li>
+            <li class="sorting__item"><button class="sorting__btn-arrows sorting__btn-arrows-down"></button></li>
+          </ul>
+
+        </div>
+        <!--/sorting-->
+
+
+
+        <div class="catalog-content__product-list">
+
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG3000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 3000</p>
+              <p class="product-box__price-old">22500 Р.</p>
+              <p class="product-box__price">15500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="#">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="#">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG6000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 6000</p>
+              <p class="product-box__price-old">30500 Р.</p>
+              <p class="product-box__price">25500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG2000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 2000</p>
+              <p class="product-box__price">12500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG3000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 3000</p>
+              <p class="product-box__price-old">22500 Р.</p>
+              <p class="product-box__price">15500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="#">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="#">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG6000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 6000</p>
+              <p class="product-box__price-old">30500 Р.</p>
+              <p class="product-box__price">25500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG2000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 2000</p>
+              <p class="product-box__price">12500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG3000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 3000</p>
+              <p class="product-box__price-old">22500 Р.</p>
+              <p class="product-box__price">15500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="#">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="#">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG6000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 6000</p>
+              <p class="product-box__price-old">30500 Р.</p>
+              <p class="product-box__price">25500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+          <div class="product-box product-box-new catalog-content__product-item">
+
+            <div class="product-box__wrapper-img">
+              <img class="product-box__img" src="img/ПрефораторBOSCHBFG2000.jpg" alt="">
+            </div>
+
+            <div class="product-box__info">
+              <p class="product-box__text">Префоратор BOSCH BFG 2000</p>
+              <p class="product-box__price">12500 Р.</p>
+            </div>
+
+            <div class="product-box__wrap-link">
+              <a class="product-box__link product-box__link-buy" href="">Купить
+                <svg class="product-box__icon">
+                  <use xlink:href="#basket"></use>
+                </svg>
+              </a>
+              <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+            </div>
+
+          </div> <!-- /product-box-->
+
+
+        </div>
+        <!--/product-list-->
+
+        <div class="page-numbering">
+          <ul class="page-numbering__list">
+            <li class="page-numbering__item"><a href="#"
+                class="page-numbering__link  page-numbering__link-number page-numbering__link-number_active">1</a></li>
+            <li class="page-numbering__item"><a href="#" class="page-numbering__link page-numbering__link-number">2</a>
+            </li>
+            <li class="page-numbering__item"><a href="#" class="page-numbering__link page-numbering__link-number">3</a>
+            </li>
+            <li class="page-numbering__item"><a href="#"
+                class="page-numbering__link page-numbering__link-txt">Слудующая</a></li>
+          </ul>
+        </div>
+        <!--/page-numbering-->
+
+      </div>
+      <!--/catalog-content__wrap-->
+
+    </div>
+    <!--/catalog-content__wrapper-->
+
+  </section>
+  <!--/catalog-content-->
+
+
+  <div class="information-product">
+    <div class="information-product__wrap">
+      <h2 class="information-product__title">Пара слов о перфораторах</h2>
+      <p class="information-product__text">Перфоратор - универсальный строительный инструмент.
+        Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+        дрели, шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор &#171;трехрежимников&#187;: в одном устройстве будут совмещены отбойный молоток
+        и ударная дрель.</p>
+    </div>
+  </div>
+  <!--/information-product-->
+
+
+
+</main>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

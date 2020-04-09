@@ -1,0 +1,46 @@
+.popular-manufacturers {
+    width: 960px;
+    margin: 0 auto 75px auto;
+
+    &__title {
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #3d546e;
+    }
+
+    &__btn {
+        width: 253px;
+    }
+
+    &__wrap-heading {
+        margin-bottom: 10px;
+    }
+
+    &__wrap-content {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    &__link {
+        width: 220px;
+        height: 145px;
+        margin: 10px;
+        border: 1px solid #eaeaea;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0 10px 25px rgba(41,52,73, .5);
+        }
+
+        &:active {
+            box-shadow: 0 4px 10px rgba(41,52,73, .5);
+            opacity: .3;
+
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.information {
+  &__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 75px 10px 86px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__about-us {
+    flex-basis: 540px;
+  }
+
+  &__contact {
+    flex-basis: 300px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__list {
+    margin-top: 20px;
+    font-family: "Cuprum";
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__item {
+    padding-left: 36px;
+    margin-bottom: 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      background-color: #ff716f;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+  }
+}
+
+.about-us__btn {
+  width: 220px;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+
+  &__box-map {
+    cursor: pointer;
+  }
+
+  &__map {
+    width: 300px;
+    height: 158px;
+    position: relative;
+    z-index: -1;
+
+    &_big {
+      width: 940px;
+      height: 446px;
+      box-shadow: 0 0 15px 5px rgba(0,0,0, .5);
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      z-index: 2;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    width: 300px;
+  }
+
+  &__link {
+    position: relative;
+
+    &:hover::after,
+    &:hover::before {
+        background-color: #ca2c37;
+    }
+
+    &::after {
+      content: "";
+      width: 4px;
+      height: 30px;
+      background-color: #ff5357;
+      border-radius: 2px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: -200px;
+      right: 20px;
+      z-index: 3;
+    }
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 30px;
+      background-color: #ff5357;
+      border-radius: 2px;
+      transform: rotate(315deg);
+      position: absolute;
+      top: -200px;
+      right: 20px;
+      z-index: 3;
+    }
+  }
+}

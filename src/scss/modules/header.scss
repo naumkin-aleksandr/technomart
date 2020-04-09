@@ -1,0 +1,333 @@
+.header {
+  background-color: #f3f7f9;
+  padding-bottom: 60px;
+
+  &__wrap {
+    background-color: #33445a;
+  }
+
+  &__box {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+
+    &_indent {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__logo {
+    width: 220px;
+    line-height: 42px;
+  }
+
+  &__title {
+    width: 320px;
+    padding: 0 50px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: #ff5357;
+  }
+
+  &__tel {
+    display: inline-block;
+    padding: 0 50px 0 71px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 39px;
+    color: #fb463c;
+    border: 3px solid #fff;
+    position: relative;
+  }
+
+  &__tel-icon {
+    width: 20px;
+    height: 20px;
+    fill: #717c8c;
+    position: absolute;
+    top: 10px;
+    left: 13px;
+  }
+
+  &__text-address {
+    padding-left: 10px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3d546e;
+  }
+}
+
+.search {
+  &__label {
+    position: relative;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #717c8c;
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+
+  &__input {
+    width: 270px;
+    height: 42px;
+    padding-left: 49px;
+
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    background-color: #33445a;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: #fff;
+    }
+
+    &:focus + .search__icon {
+      fill: #ee3643;
+    }
+  }
+}
+
+.nav-buy {
+  display: flex;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &__link {
+    display: block;
+    width: 150px;
+    padding-left: 45px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    line-height: 42px;
+    color: #fff;
+    position: relative;
+
+    &:hover .nav-buy__icon {
+      fill: #fff;
+      transition: 0.2s;
+    }
+
+    &:active {
+      opacity: 0.5;
+      transition: 0.2s;
+    }
+
+    &_red {
+      background-color: #ee3643;
+    }
+  }
+}
+
+.order {
+  &__link {
+    width: 150px;
+    height: 42px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    background-color: #63a63e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #5fbb2d;
+      transition: 0.2s;
+    }
+
+    &:active {
+      transition: 0.2s;
+      opacity: 0.5;
+    }
+  }
+}
+
+.nav-user {
+  margin-left: auto;
+
+  &__link {
+    display: inline-block;
+    padding: 0 25px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 45px;
+    color: #000;
+    background-color: #fff;
+
+    &-entrance {
+      padding-left: 48px;
+      position: relative;
+    }
+
+    &:hover {
+      color: #ee3643;
+      transition: 0.2s;
+    }
+    &:hover .nav-user__icon {
+      fill: #32425c;
+      transition: 0.2s;
+    }
+    &:active .nav-user__icon {
+      fill: rgba(0, 0, 0, 0.3);
+      transition: 0.2s;
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      transition: 0.2s;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: #c3cbd2;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+}
+
+.profile {
+  margin-left: auto;
+
+  &__box-user {
+    width: 300px;
+    padding: 0 47px;
+    background-color: #fff;
+    position: relative;
+
+    &:hover .profile__icon-user {
+      fill: #32425c;
+      transition: 0.2s;
+    }
+
+    &:active .profile__icon {
+      fill: #c5c5c5;
+      transition: 0.2s;
+    }
+
+    &:active .profile__text {
+      opacity: 0.3;
+      transition: 0.2s;
+    }
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: #c5c5c5;
+    position: absolute;
+
+    &-user {
+      top: 13px;
+      left: 15px;
+    }
+
+    &-exit {
+      top: 13px;
+      right: 15px;
+      &:hover {
+        fill: #32425c;
+        transition: 0.2s;
+      }
+    }
+  }
+
+  &__box-link {
+    display: flex;
+  }
+
+  &__text {
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 45px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 15px;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 16px;
+    color: #32425c;
+    text-decoration: underline;
+    position: relative;
+
+    &:hover {
+      color: #ee3643;
+      transition: 0.2s;
+    }
+
+    &:active {
+      color: rgba(50, 66, 92, 0.3);
+      transition: 0.2s;
+    }
+
+    &:first-of-type::after {
+      content: "";
+      width: 4px;
+      height: 5px;
+      background-color: #32425c;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: -17px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  background-color: #3d546e;
+  border-bottom: 5px solid #33445a;
+  display: flex;
+
+  &__link {
+    flex: 1 0 auto;
+    font-family: "Cuprum";
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 55px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+
+    &:hover {
+      background-color: #33445a;
+      transition: 0.2s;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.5);
+      transition: 0.2s;
+    }
+  }
+}

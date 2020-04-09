@@ -1,0 +1,53 @@
+.page-numbering {
+    margin: 0 10px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 10px;
+        line-height: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-family: "PT Sans";
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000;
+        text-transform: uppercase;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        text-align: center;
+
+        &:hover {
+            border-color: #bdc6ca;
+        }
+
+        &:active {
+            border-color: #ee3643;
+        }
+
+        &-number {
+            width: 38px;
+
+            &_active {
+                color: #fff;
+                background-color: #ee3643;
+                border-color: #ee3643;
+                &:hover {
+                    border-color: #ee3643;
+                }
+            }
+
+        }
+
+        &-txt {
+            width: 140px;
+        }
+    }
+}

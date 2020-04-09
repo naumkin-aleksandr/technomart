@@ -1,0 +1,24 @@
+.information-product {
+    background-color: #f2f6f8;
+
+    &__wrap {
+        width: 960px;
+        margin: 0 auto;
+        padding: 60px 10px 70px 10px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: "Cuprum";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

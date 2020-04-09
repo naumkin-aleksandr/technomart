@@ -1,0 +1,342 @@
+<% var data = {
+  title: "Техномарт",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+
+<main>
+  <section class="catalog">
+
+    <div class="catalog__box catalog__box-materials catalog__box_orange catalog__box_new">
+      <h2 class="catalog__title">Материалы</h2>
+      <a class="catalog__link" href="#">На любой вкус</a>
+    </div>
+
+    <div class="catalog__box catalog__box-tool catalog__box_blue catalog__box_new">
+      <h2 class="catalog__title">Инструмент</h2>
+      <a class="catalog__link" href="#">На все случаи</a>
+
+    </div>
+
+    <div class="catalog__box catalog__box-equipment catalog__box_purple">
+      <h2 class="catalog__title">Техника</h2>
+      <a class="catalog__link" href="#">Для стройки</a>
+    </div>
+
+
+    <div class="special-offer">
+
+      <div class="special-offer__box-switches">
+        <button class="special-offer__switches special-offer__switches_active" id="speceal-offer__btn-1"></button>
+        <button class="special-offer__switches" id="speceal-offer__btn-2"></button>
+      </div>
+
+      <svg class="special-offer__icon special-offer__icon_right" id="special-offer__arrow-right">
+        <use xlink:href="#arrow"></use>
+      </svg>
+
+      <svg class="special-offer__icon special-offer__icon_left" id="special-offer__arrow-left">
+        <use xlink:href="#arrow"></use>
+      </svg>
+
+
+      <div id="box-hamer-drill" class="special-offer__box special-offer__box-hammer-drill">
+        <h3 class="special-offer__title">Префораторы</h3>
+        <p class="special-offer__text">Настоящие мужские игрушки</p>
+        <a class="special-offer__btn btn" href="#">Открыть каталог</a>
+      </div>
+
+      <div id="box-drill" class="special-offer__box special-offer__box-drill none">
+        <h3 class="special-offer__title">Дрели</h3>
+        <p class="special-offer__text">Соседям на радость!</p>
+        <a class="special-offer__btn btn" href="#">Открыть каталог</a>
+      </div>
+
+    </div>
+    <!--/special-offer-->
+
+    <div class="catalog__wrap">
+
+      <div class="catalog__box catalog__box-discounts catalog__box_green">
+        <h2 class="catalog__title">Скидки 50%</h2>
+        <a class="catalog__link" href="#">На 350 товаров</a>
+
+      </div>
+
+      <div class="catalog__box catalog__box-delivery catalog__box_orange catalog__box_new">
+        <h2 class="catalog__title">Доставка</h2>
+        <a class="catalog__link" href="#">бесплатно</a>
+
+      </div>
+
+    </div>
+    <!--catalog__wrap-->
+
+  </section>
+  <!--/catolog-->
+
+  <section class="popular-product">
+
+    <div class="popular-product__wrap-heading wrapper-title">
+      <h1 class="popular-product__title">Популярные товыры:</h1>
+      <a class="popular-product__btn btn" href="#">Все популярные товары</a>
+    </div>
+    <!--/popular-product__wrap-->
+
+    <div class="popular-product__wrap-content">
+
+      <div class="product-box  popular-product__item">
+
+        <div class="product-box__wrapper-img">
+          <img class="product-box__img" src="img/ПрефораторBOSCHBFG9000.jpg" alt="">
+        </div>
+
+        <div class="product-box__info">
+          <p class="product-box__text">Префоратор BOSCH BFG 9000</p>
+          <p class="product-box__price-old">32500 Р.</p>
+          <p class="product-box__price">25500 Р.</p>
+        </div>
+
+        <div class="product-box__wrap-link">
+          <a class="product-box__link product-box__link-buy" href="">Купить
+            <svg class="product-box__icon">
+              <use xlink:href="#basket"></use>
+            </svg>
+          </a>
+          <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+        </div>
+
+      </div> <!-- /product-box-->
+
+      <div class="product-box  popular-product__item">
+
+        <div class="product-box__wrapper-img">
+          <img class="product-box__img" src="img/ПрефораторBOSCHBFG3000.jpg" alt="">
+        </div>
+
+        <div class="product-box__info">
+          <p class="product-box__text">Префоратор BOSCH BFG 3000</p>
+          <p class="product-box__price-old">22500 Р.</p>
+          <p class="product-box__price">15500 Р.</p>
+        </div>
+
+        <div class="product-box__wrap-link">
+          <a class="product-box__link product-box__link-buy" href="#">Купить
+            <svg class="product-box__icon">
+              <use xlink:href="#basket"></use>
+            </svg>
+          </a>
+          <a class="product-box__link product-box__link-bookmarks" href="#">В закладки</a>
+        </div>
+
+      </div> <!-- /product-box-->
+
+      <div class="product-box popular-product__item">
+
+        <div class="product-box__wrapper-img">
+          <img class="product-box__img" src="img/ПрефораторBOSCHBFG6000.jpg" alt="">
+        </div>
+
+        <div class="product-box__info">
+          <p class="product-box__text">Префоратор BOSCH BFG 6000</p>
+          <p class="product-box__price-old">30500 Р.</p>
+          <p class="product-box__price">25500 Р.</p>
+        </div>
+
+        <div class="product-box__wrap-link">
+          <a class="product-box__link product-box__link-buy" href="">Купить
+            <svg class="product-box__icon">
+              <use xlink:href="#basket"></use>
+            </svg>
+          </a>
+          <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+        </div>
+
+      </div> <!-- /product-box-->
+
+      <div class="product-box product-box-new popular-product__item">
+
+        <div class="product-box__wrapper-img">
+          <img class="product-box__img" src="img/ПрефораторBOSCHBFG2000.jpg" alt="">
+        </div>
+
+        <div class="product-box__info">
+          <p class="product-box__text">Префоратор BOSCH BFG 2000</p>
+          <p class="product-box__price">12500 Р.</p>
+        </div>
+
+        <div class="product-box__wrap-link">
+          <a class="product-box__link product-box__link-buy" href="">Купить
+            <svg class="product-box__icon">
+              <use xlink:href="#basket"></use>
+            </svg>
+          </a>
+          <a class="product-box__link product-box__link-bookmarks" href="">В закладки</a>
+        </div>
+
+      </div> <!-- /product-box-->
+
+    </div>
+    <!--/popular-product__wrap-content-->
+
+  </section>
+  <!--/popular-product-->
+
+  <section class="popular-manufacturers">
+
+    <div class="popular-manufacturers__wrap-heading wrapper-title">
+      <h1 class="popular-manufacturers__title">Популярные производители:</h1>
+      <a class="popular-manufacturers__btn btn" href="#">Все производители</a>
+    </div>
+
+    <ul class="popular-manufacturers__wrap-content">
+
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-bosch.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-Makita.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-DeWALT.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-Интерскол.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-Hitachi.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-LG.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-AEG.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+      <li class="popular-manufacturers__item">
+        <a href="#" class="popular-manufacturers__link">
+          <img src="img/logo-Metabo.png" alt="" class="popular-manufacturers__img">
+        </a>
+      </li>
+
+
+
+    </ul>
+    <!--/popular-manufacturers__wrap-content-->
+
+  </section>
+  <!--/popular-manufacturers-->
+
+  <section class="service">
+    <div class="service__wrapper">
+
+      <h1 class="service__title">Сервисы</h1>
+      <p class="service__text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <div class="service__wrap-content">
+
+        <input class="service__input" id="service__delivery" type="radio" name="service__radio" checked>
+        <label class="service__label" for="service__delivery">Доставка</label>
+
+        <input class="service__input" id="service__warranty" type="radio" name="service__radio">
+        <label class="service__label" for="service__warranty">Гарантия</label>
+
+        <input class="service__input" id="service__credit" type="radio" name="service__radio">
+        <label class="service__label" for="service__credit">Кредит</label>
+
+        <div class="service__box service__box-delivery" id="delivery">
+          <h2 class="service__subtitle">Доставка</h2>
+          <p class="service__txt">Мы с удовольствием доставим ваш товар прямо <br>
+            к вашему подъезду совершенно бесплатно! <br>
+            Ведь мы неплохо заработаем, <br>
+            поднимая его на этаж!
+          </p>
+        </div>
+
+        <div class="service__box service__box-warranty" id="warranty">
+          <h2 class="service__subtitle">Гарантия</h2>
+          <p class="service__txt">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+            спровоцированного его вазгаранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
+        </div>
+
+        <div class="service__box service__box-credit" id="credit">
+          <h2 class="service__subtitle">Кредит</h2>
+          <p class="service__txt">Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <a class="service__btn btn" href="#">Отправить заявку</a>
+        </div>
+
+      </div>
+      <!--/service__wrap-content-->
+
+    </div>
+    <!--/service__wrapper-->
+  </section>
+  <!--/service-->
+
+  <section class="information">
+    <div class="information__wrapper">
+
+      <div class="information__about-us about-us">
+        <h2 class="information__title ">Компания &#171;Техномарт&#187;</h2>
+        <div class=" information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта
+          и<br>
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</div>
+        <div class="information__text">Мы можем доставить ваш товар в самые отдалннные точки России! <br>
+          Техномарт работает со многими транспортными компаниями:
+          <ul class="information__list">
+            <li class="information__item">Деловые линии</li>
+            <li class="information__item">Автотрейдинг</li>
+            <li class="information__item">ЖелДорЭкспедиция</li>
+          </ul>
+        </div>
+        <a class="about-us__btn btn" href="#">Подробнее о компании</a>
+      </div>
+      <!--/about-us-->
+
+      <div class="information__contact contact">
+        <h2 class="information__title contact__title">Контакты</h2>
+
+        <p class="information__text"> Вы можете забрать товар сами, <br>
+          заехав в наш офис: </p>
+
+
+        <div class="contact__box-map">
+          <iframe class="contact__map " id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4753.462265968705!2d30.3237363467262!3d59.93903335349158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1586381818550!5m2!1sru!2sru"
+            aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <a class="contact__link none" id="contact__link-close" href="#"></a>
+
+        <a class="contact__btn btn" id="contact__btn" href="">Заблудились? Напишите нам!</a>
+      </div> <!-- /.contact -->
+
+    </div>
+    <!--/information-->
+
+  </section>
+  <!--/information-->
+
+</main>
+
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
