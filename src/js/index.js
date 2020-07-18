@@ -2,9 +2,7 @@
 // import popper from "popper.js";
 // import bootstrap from "bootstrap";
 
-// jQuery(function() {
-//   jQuery("body").css("color", "blue");
-// });
+
 
 
 
@@ -12,7 +10,7 @@ var popup = document.querySelector("#modal");
 var callPopup = document.querySelector("#contact__btn");
 var hidePopup = document.querySelector(".modal-window__link-exit");
 
-if (document.querySelector("#contact__btn")) {
+if (callPopup) {
     callPopup.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("none");
@@ -21,7 +19,7 @@ if (document.querySelector("#contact__btn")) {
     });
 }
 
-if (document.querySelector(".modal-window__link-exit")) {
+if (hidePopup ) {
     hidePopup.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("none");
@@ -35,7 +33,7 @@ var callMap = document.querySelector(".contact__box-map");
 var map = document.querySelector("#map");
 var closeMap = document.querySelector("#contact__link-close");
 
-if (document.querySelector("#contact__link-close")) {
+if (closeMap ) {
     closeMap.addEventListener("click", function (evt) {
         evt.preventDefault();
         map.classList.add("contact__map");
@@ -44,7 +42,7 @@ if (document.querySelector("#contact__link-close")) {
     });
 }
 
-if (document.querySelector(".contact__box-map")) {
+if (callMap ) {
     callMap.addEventListener("click", function () {
         map.classList.add("contact__map_big");
         map.classList.remove("contact__map");
@@ -63,7 +61,7 @@ var specialOfferArrowRight = document.querySelector("#special-offer__arrow-right
 var specialOfferArrowLeft = document.querySelector("#special-offer__arrow-left");
 
 
-if (document.querySelector("#speceal-offer__btn-1")) {
+if (specialOfferBtn1 ) {
     specialOfferBtn1.addEventListener("click", function (evt) {
         evt.preventDefault();
         specialOfferBtn1.classList.add("special-offer__switches_active");
@@ -74,7 +72,7 @@ if (document.querySelector("#speceal-offer__btn-1")) {
     });
 }
 
-if (document.querySelector("#speceal-offer__btn-2")) {
+if (specialOfferBtn2 ) {
     specialOfferBtn2.addEventListener("click", function (evt) {
         evt.preventDefault();
         specialOfferBtn2.classList.add("special-offer__switches_active");
@@ -84,7 +82,7 @@ if (document.querySelector("#speceal-offer__btn-2")) {
     });
 }
 
-if (document.querySelector("#special-offer__arrow-right")) {
+if (specialOfferArrowRight ) {
     specialOfferArrowRight.addEventListener("click", function () {
         specialOfferBoxHamerDrill.classList.toggle("none");
         specialOfferBoxDrill.classList.toggle("none");
@@ -93,7 +91,7 @@ if (document.querySelector("#special-offer__arrow-right")) {
     });
 }
 
-if (document.querySelector("#special-offer__arrow-left")) {
+if (specialOfferArrowLeft ) {
     specialOfferArrowLeft.addEventListener("click", function () {
         specialOfferBoxHamerDrill.classList.toggle("none");
         specialOfferBoxDrill.classList.toggle("none");
@@ -103,8 +101,9 @@ if (document.querySelector("#special-offer__arrow-left")) {
 }
 
 // range 
-
+if (document.querySelector('#filter')) {
 setTimeout(init2slider("range", "range-between", 'id661', 'id662', 'id66i1', 'id66i2'), 0);
+}
 
 function init2slider(idX, btwX, btn1X, btn2X, input1, input2) {
     var slider = document.getElementById(idX);
